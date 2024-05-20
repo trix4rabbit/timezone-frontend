@@ -1,0 +1,68 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 100px;
+  width: 100%;
+  background-color: #ffffff;
+  z-index: 100;
+}
+.header__titles {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-self: center;
+  margin: 16px auto 16px 100px;
+  width: fit-content;
+}
+.header__title {
+  font-family: "Inter";
+  margin: 0;
+  text-align: left;
+  font-size: 3.2rem;
+  width: fit-content;
+  align-self: center;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+.header__subtitle {
+  margin: 0;
+  text-align: right;
+  width: fit-content;
+  align-self: flex-end;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+  .header__titles {
+    flex-direction: column;
+    gap: 0.3em;
+    align-self: left;
+    margin: auto auto auto 80px;
+  }
+  .header__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width:750px) and (min-width: 400px) {
+  .header {
+    height: 120px;
+  }
+  .header__titles {
+    gap: 0.2em;
+    align-self: left;
+    margin-left: 30px;
+  }
+  .header__title {
+    font-size: 1.8rem;
+  }
+  .header__subtitle {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,11 @@
+@import url(../../vendor/fonts.css);
+
+.app {
+  font-family: "Inter";
+  background-color: skyblue;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+}
